@@ -9,7 +9,7 @@ import {CustomerService} from '../shared/customer.service';
 })
 export class CustomerListComponent implements OnInit {
 
-  constructor(private customerService: CustomerService) { }
+  constructor(public customerService: CustomerService) { }
   customerArray = [];
   showDeleteMessage: boolean;
   searchText = '';
